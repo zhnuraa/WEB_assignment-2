@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nurasyl Zhumagul's front-end portfolio. A collection of HTML and CSS projects exploring Flexbox, Grid, and responsive design.">
+    <meta name="theme-color" content="#244b3e">
+    <title>Nurasyl — Front-End Developer</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- TASK 0: Flexbox places the logo left and the navigation right. -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Nurasyl, home">nurasyl<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero container" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A DEVELOPER IN THE MAKING</p>
+                <h1 id="hero-title">Thoughtful interfaces.<br><span>Built with purpose.</span></h1>
+                <p class="hero-description">Hi, I’m Nurasyl. I’m learning to turn ideas into clean, responsive websites — one thoughtful detail at a time.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#about">A little about me <span aria-hidden="true">→</span></a>
+                </div>
+                <p class="hero-footnote">FRONT-END DEVELOPMENT <span aria-hidden="true">/</span> PORTFOLIO 2026</p>
+            </div>
+            <figure class="hero-visual">
+                <img src="images/gallery-1.jpg" alt="" width="1170" height="780" fetchpriority="high">
+                <figcaption><span>Inspired by the world.<br>Designed for the web.</span><span class="visual-mark" aria-hidden="true">↗</span></figcaption>
+            </figure>
+        </section>
+
+        <div class="toolkit container" aria-label="My toolkit">
+            <span class="toolkit-label">MY EVERYDAY TOOLKIT</span>
+            <span>HTML5</span><span>CSS3</span><span>Flexbox</span><span>CSS Grid</span><span>Responsive Design</span>
+        </div>
+
+        <!-- TASK 1: Three equal-height cards in one Flexbox row. -->
+        <section class="section container" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">Small projects. Real progress.</h2></div>
+                <p>A few explorations in structure,<br>spacing, and thoughtful design.</p>
+            </div>
+            <div class="cards-container">
+                <article class="card">
+                    <div class="card-image"><img src="images/gallery-2.jpg" alt="" width="367" height="267"><span class="image-label">01 / STRUCTURE</span></div>
+                    <div class="card-body">
+                        <p class="card-category">CSS GRID · LAYOUT</p>
+                        <h3>Everything in its place</h3>
+                        <p>A small workspace layout, built around four named Grid Areas.</p>
+                        <a class="card-action" href="#grid-demo">Explore the layout <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image"><img src="images/gallery-3.jpg" alt="" width="367" height="267"><span class="image-label">02 / PERSPECTIVE</span></div>
+                    <div class="card-body">
+                        <p class="card-category">CSS GRID · INTERACTION</p>
+                        <h3>A different perspective</h3>
+                        <p>Nine photographs in a responsive gallery. A little movement and a caption on hover add another layer to each frame.</p>
+                        <a class="card-action" href="#gallery">Open the gallery <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image"><img src="images/gallery-4.jpg" alt="" width="367" height="267"><span class="image-label">03 / CONNECTION</span></div>
+                    <div class="card-body">
+                        <p class="card-category">FLEXBOX + GRID · PORTFOLIO</p>
+                        <h3>Bringing it together</h3>
+                        <p>A home for my learning notes and the person behind the code. Two layout tools, working together.</p>
+                        <a class="card-action" href="#work">View the portfolio <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- TASK 2: A visible header/sidebar/main/footer Grid Areas example. -->
+        <section class="section grid-section" id="grid-demo" aria-labelledby="grid-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">02 / THE LAYOUT LAB</p><h2 id="grid-title">Good design starts with structure.</h2></div>
+                    <p>Four areas. One connected workspace.<br>A closer look at CSS Grid.</p>
+                </div>
+                <div class="grid-layout">
+                    <header class="grid-header">
+                        <p><span class="workspace-icon" aria-hidden="true">▦</span> The creative workspace</p>
+                        <span class="area-label">HEADER</span>
+                    </header>
+                    <aside class="grid-sidebar" aria-label="Workspace sidebar">
+                        <span class="area-label">SIDEBAR</span>
+                        <p class="workspace-title">A place for every idea.</p>
+                        <nav aria-label="Workspace links">
+                            <a href="#grid-notes"><span aria-hidden="true">▤</span> Overview <span aria-hidden="true">↗</span></a>
+                            <a href="#projects"><span aria-hidden="true">□</span> My projects <span aria-hidden="true">↗</span></a>
+                            <a href="#gallery"><span aria-hidden="true">▧</span> Inspiration <span aria-hidden="true">↗</span></a>
+                        </nav>
+                        <p class="sidebar-note">Simple structure.<br>Room to create.</p>
+                    </aside>
+                    <section class="grid-main" id="grid-notes" aria-labelledby="grid-main-title">
+                        <span class="area-label">MAIN CONTENT</span>
+                        <h3 id="grid-main-title">A little order.<br>A lot of possibility.</h3>
+                        <p>Grid gives each part of this workspace a home. The header and footer stretch across both columns; the sidebar and content sit side by side.</p>
+                        <div class="layout-key"><span>240px sidebar</span><span>1fr content</span><span>4 named areas</span></div>
+                    </section>
+                    <footer class="grid-footer"><span><span class="status-dot" aria-hidden="true"></span> Built with CSS Grid Areas</span><span class="area-label">FOOTER</span></footer>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASK 3: Nine equal-size Grid images with CSS caption overlays. -->
+        <section class="section container" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">03 / VISUAL INSPIRATION</p><h2 id="gallery-title">A collection of perspectives.</h2></div>
+                <p>Finding rhythm in the everyday.<br>Hover or focus a frame to look closer.</p>
+            </div>
+            <div class="gallery">
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-1.jpg" alt="Evergreen forest overlooking blue water and distant mountains" width="1170" height="780" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>01 / NATURE</span>
+                        <h3>A moment of stillness</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-2.jpg" alt="Winding river through a green valley surrounded by misty forested hills" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>02 / EXPLORATION</span>
+                        <h3>Beyond the familiar</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-3.jpg" alt="Dark rocks in front of a sandy beach and calm water" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>03 / PERSPECTIVE</span>
+                        <h3>A different view</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-4.jpg" alt="Pebble beach lined with driftwood and evergreen trees beside blue water" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>04 / BALANCE</span>
+                        <h3>Finding the rhythm</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-5.jpg" alt="Rocky shoreline beside calm grey water under an overcast sky" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>05 / DETAIL</span>
+                        <h3>The little things</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-6.jpg" alt="Narrow waterfall in a rocky ravine surrounded by green plants" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>06 / SPACE</span>
+                        <h3>Room to breathe</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-7.jpg" alt="Driftwood and rocks beside blue water with distant forested islands" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>07 / LIGHT</span>
+                        <h3>A softer afternoon</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-8.jpg" alt="Straight gravel path through green grass toward tall evergreen trees" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>08 / TEXTURE</span>
+                        <h3>Layers of the world</h3>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" tabindex="0">
+                    <img src="images/gallery-9.jpg" alt="Slender grass stems in a green meadow with blurred trees" width="367" height="267" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span>09 / DISCOVERY</span>
+                        <h3>Somewhere new</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="gallery-credit">A personal inspiration board. Photography credits in <a href="images/SOURCES.md">image sources</a>.</p>
+        </section>
+
+        <!-- TASK 4: Grid projects + information sidebar; Flexbox inside cards. -->
+        <section class="section portfolio-section" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">04 / BEHIND THE CODE</p><h2 id="work-title">Made to keep learning.</h2></div>
+                    <p>Curiosity, a browser,<br>and a little practice every day.</p>
+                </div>
+                <div class="portfolio-layout">
+                    <section class="projects-section" aria-labelledby="notes-title">
+                        <h3 class="small-heading" id="notes-title">PROJECT NOTES <span>02 STUDIES</span></h3>
+                        <div class="project-list">
+                            <article class="project-card">
+                                <div class="project-top"><span class="project-number">01</span><span class="tag">FLEXBOX</span></div>
+                                <h3>The responsive card</h3>
+                                <p>Exploring how a flexible row and a column inside each card keep different amounts of content aligned.</p>
+                                <details class="project-action">
+                                    <summary>Read the build notes <span aria-hidden="true">+</span></summary>
+                                    <p>The container stretches its cards to equal heights. Each card is a flex column, and <code>margin-top: auto</code> pushes its link to the bottom. Below 768px, the row becomes a column.</p>
+                                    <a href="#projects">See the card row <span aria-hidden="true">↗</span></a>
+                                </details>
+                            </article>
+                            <article class="project-card">
+                                <div class="project-top"><span class="project-number">02</span><span class="tag">CSS GRID</span></div>
+                                <h3>The adaptable gallery</h3>
+                                <p>Giving nine images a consistent rhythm, from a wide desktop canvas to a small mobile screen. Captions stay accessible on touch screens, too.</p>
+                                <details class="project-action">
+                                    <summary>Read the build notes <span aria-hidden="true">+</span></summary>
+                                    <p>The gallery uses <code>repeat(3, 1fr)</code>, then two columns below 1000px and one below 520px. Images use <code>object-fit: cover</code>. Captions fade in on hover or keyboard focus.</p>
+                                    <a href="#gallery">See the image gallery <span aria-hidden="true">↗</span></a>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+                    <aside class="info-sidebar" id="about" aria-labelledby="about-title">
+                        <div class="about-top"><span class="avatar" aria-hidden="true">NZ</span><span class="eyebrow">HELLO THERE <span aria-hidden="true">↗</span></span></div>
+                        <h3 id="about-title">I’m Nurasyl.</h3>
+                        <p>A front-end student with an eye for simple, useful design. I’m building a strong foundation in the web, starting with HTML and CSS.</p>
+                        <h4>Currently working with</h4>
+                        <ul class="skills"><li>HTML5</li><li>CSS3</li><li>Flexbox</li><li>CSS Grid</li><li>Responsive Design</li><li>Git / GitHub</li></ul>
+                        <a class="about-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact" aria-labelledby="contact-title">
+            <div><p class="eyebrow">ALWAYS OPEN TO A GOOD IDEA</p><h2 id="contact-title">Let’s compare notes.</h2><p>Find me in WEB Technologies 1 (Front End).<br>Happy to talk about learning, design, and the next project.</p></div>
+            <a class="button button-primary" href="#about">Meet the developer <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container"><p>© 2026 Nurasyl Zhumagul<span>Made with care, HTML &amp; CSS.</span></p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div>
+    </footer>
+</body>
+</html>
