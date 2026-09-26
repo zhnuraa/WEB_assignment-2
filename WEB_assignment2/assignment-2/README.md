@@ -1,9 +1,8 @@
 # Assignment #2 — Advanced CSS (Flexbox & Grid)
 
-## Student Information
 
 **Name:** Nurasyl Zhumagul  
-**Group:** GROUP HERE  
+**Group:** IT-2501
 **Course:** WEB Technologies 1 (Front End)
 
 ## Project Overview
