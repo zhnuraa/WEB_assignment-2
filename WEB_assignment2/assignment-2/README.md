@@ -114,59 +114,6 @@ Media queries adapt the layout to narrower screens:
 
 Flexible widths, `box-sizing: border-box`, constrained images, and wrapping text help content stay inside the viewport. Keyboard focus styles, image alternative text, touch-friendly captions, and reduced-motion support also make the page easier to use.
 
-## Technologies Used
-
-- **HTML5:** semantic structure, section links, images, and native expandable project notes.
-- **CSS3:** colors, spacing, borders, transitions, and media queries.
-- **Flexbox:** navigation, equal-height card rows, and vertical card content.
-- **CSS Grid:** named page areas, the gallery, and the portfolio columns.
-- **Responsive Design:** layouts that adapt to desktop, tablet, and mobile screens.
-- **Git:** version control for tracking project changes.
-- **GitHub:** repository hosting and assignment submission.
 
 Git and GitHub are development/submission tools; the website itself only requires a web browser. Preparing these files does not automatically create commits or publish a GitHub repository.
 
-## Work Process Summary
-
-The project started with semantic HTML for the header, main sections, sidebar, and footer. Flexbox was used for the navigation and for a row of equal-height cards. Next, CSS Grid Areas created a clearly labelled page-layout example, followed by a nine-image gallery with hover captions. Grid and Flexbox were then combined in the portfolio section. Responsive media queries adapted the layout for smaller screens, and the finished page was reviewed for alignment, spacing, working links, image loading, and responsive behavior.
-
-## How to Run
-
-1. Clone or download the repository and extract it if necessary.
-2. Open the `assignment-2` project folder.
-3. Open `index.html` directly in a web browser. Alternatively, open the folder in VS Code, right-click `index.html`, and choose **Open with Live Server** if that extension is installed.
-
-Keep `style.css` and the `images` folder beside `index.html`. No package installation or build command is needed.
-
-## Screenshots
-
-The report uses the following screenshot paths. If the design is changed, open the real page in a browser and retake the corresponding screenshots. Use a desktop viewport wide enough to show the row and column layouts, and wait for the images to load before capturing.
-
-| File | What the screenshot should show |
-| --- | --- |
-| `screenshots/task0-navbar.png` | Full header, with the logo on the left and all navigation links on the right. |
-| `screenshots/task1-cards.png` | All three cards in one row, including images, titles, text, and aligned actions. |
-| `screenshots/task2-grid-layout.png` | The entire labelled Grid Areas example: header, sidebar, main content, and footer. |
-| `screenshots/task3-gallery.png` | All nine gallery images in three desktop columns; hover or focus one item to show its caption. |
-| `screenshots/task4-portfolio.png` | The projects area and information sidebar together in the two-column portfolio layout. |
-
-Screenshots must be actual browser captures of this project, not empty files or mockups.
-
-All five required screenshots are included. They were captured from the actual page at a 1280px desktop viewport. The gallery screenshot joins two overlapping browser captures at the gap between image rows so all nine images are visible. Additional `homepage-preview.png` and `mobile-preview.png` captures show the introduction at desktop and phone widths.
-
-## Verification Results
-
-The finished page was checked in a Chromium browser at 1280px, 900px, 768px, 520px, 375px, and 320px viewport widths. No horizontal overflow was found. Desktop cards measured the same height and their actions aligned at the bottom. All images loaded, every internal anchor had a matching target, and the browser reported no console errors. The project notes opened and closed using both the mouse and keyboard. Gallery captions were checked with keyboard focus and mouse hover.
-
-Browser checks used a local HTTP preview. The automation environment blocks direct `file://` navigation, so double-click opening was not exercised by that tool. The page has only relative local asset paths and no server-dependent features.
-
-## Before Uploading to GitHub
-
-- Replace **GROUP HERE** with the correct group name.
-- Review the About and Contact content and add any personal contact details you want to submit publicly.
-- Open `index.html`, click every navigation link, expand the project notes, and check gallery captions with both the mouse and keyboard.
-- Check the page at desktop and mobile widths; confirm that images load and there is no horizontal scrolling.
-- Confirm that all five screenshot files exist, match the current page, and display correctly in this README.
-- Keep all nine JPG files and `images/SOURCES.md` in the submitted project.
-- Review `DEFENSE.md` and practice changing the Flexbox direction, Grid columns, gaps, and named areas.
-- Upload or commit the entire `assignment-2` folder with its relative paths preserved. Check the README and images after uploading, since filename capitalization matters on GitHub.
