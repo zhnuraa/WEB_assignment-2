@@ -1,10 +1,6 @@
 # WEB Technologies 1 - Assignment 2
 
-Name: Nurassyl Zhumagul  
-Group: IT-2501  
-Course: WEB Technologies 1 (Front End)
-
-I kept the Arial font, light blue background and simple borders from my first assignment. In this assignment, I added Flexbox and Grid layouts.
+**Nurassyl Zhumagul IT-2501**
 
 ## Part 1 - Flexbox
 
