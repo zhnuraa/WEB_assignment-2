@@ -46,10 +46,3 @@ I used one media query at 768px. The navigation wraps, the cards stack, and the 
 
 In this assignment, I practiced Flexbox and CSS Grid. I used Flexbox for the navigation bar and cards. I used Grid for the page layout and image gallery. I also combined Flexbox and Grid in the portfolio section.
 
-## How to Run
-
-Download the project and open `index.html` in a browser, or use VS Code Live Server. Keep `style.css` and the `images` folder next to `index.html`.
-
-I used HTML5 and CSS3. Git and GitHub can be used to save and submit the project. There is no JavaScript or CSS framework.
-
-Photo credits are in [images/SOURCES.md](images/SOURCES.md). My practice notes are in [DEFENSE.md](DEFENSE.md).
